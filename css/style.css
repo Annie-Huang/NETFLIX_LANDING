@@ -192,6 +192,42 @@ img {
     text-align: center;
 }
 
+.table {
+    width: 100%;
+    margin-top: 2rem;
+    /*
+    The border-collapse property sets whether table borders should collapse into a single border or be separated as in standard HTML.
+    https://www.w3schools.com/cssref/tryit.asp?filename=trycss_border-collapse
+    */
+    border-collapse: collapse;
+
+    /*
+    This is unnecessary, The border-spacing CSS property sets the distance between the borders of adjacent <table> cells.
+    This property applies only when border-collapse is separate.
+    https://developer.mozilla.org/en-US/docs/Web/CSS/border-spacing
+     */
+    border-spacing: 0;
+}
+
+.table thead th {
+    text-transform: uppercase;
+    padding: 0.8rem;
+}
+
+.table tbody tr td {
+    color: #999;
+    padding: 0.8rem 1.2rem;
+    text-align: center;
+}
+
+.table tbody tr td:first-child {
+    text-align: left;
+}
+
+.table tbody tr:nth-child(odd) {
+    background: #222;
+}
+
 /* Perfer to put utility classes at the bottom */
 /* Container */
 .container {
