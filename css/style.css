@@ -58,7 +58,7 @@ img {
     height: 100%;
     z-index: 1;
     background: rgba(0,0,0, 0.6);
-    box-shadow: inset 120px 100px 250px #000000;
+    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
     /*
     box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
     h-offset: how far horizontally it's away from the box;
@@ -68,6 +68,10 @@ img {
            120px 100px is basically the left and the top offset of the shadow.
            https://www.w3schools.com/cssref/playit.asp?filename=playcss_box-shadow&preval=20px%2020px%2050px%2010px%20pink%20inset
     120px 100px 250px: The optional third value adds a blur effect to the shadow. How blur is the shadow.
+
+    -120px -100px is to put the shadow on the right and bottom as well
+                  Every time you add a ',' in, you just adding a new box-shadow in..
+                  https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_box-shadow4
      */
 }
 
