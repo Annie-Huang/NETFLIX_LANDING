@@ -58,6 +58,17 @@ img {
     height: 100%;
     z-index: 1;
     background: rgba(0,0,0, 0.6);
+    box-shadow: inset 120px 100px 250px #000000;
+    /*
+    box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
+    h-offset: how far horizontally it's away from the box;
+    v-offset: how far vertically it's away from the box;
+    inset: Optional. Changes the shadow from an outer shadow (outset) to an inner shadow
+           Because boxshadow is usually on bottom and right of the box. Once you make it inset, the top and left side is will more blur.
+           120px 100px is basically the left and the top offset of the shadow.
+           https://www.w3schools.com/cssref/playit.asp?filename=playcss_box-shadow&preval=20px%2020px%2050px%2010px%20pink%20inset
+    120px 100px 250px: The optional third value adds a blur effect to the shadow. How blur is the shadow.
+     */
 }
 
 .showcase-top {
